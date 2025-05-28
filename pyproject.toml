@@ -1,0 +1,15 @@
+[tool.poetry]
+authors = ["fr-froussel <4551879+fr-froussel@users.noreply.github.com>"]
+description = ""
+name = "requirementsgeneratorllm"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+mistralai = "^1.7.1"
+streamlit = "^1.45.1"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]

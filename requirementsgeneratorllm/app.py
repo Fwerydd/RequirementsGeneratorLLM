@@ -50,7 +50,8 @@ selected_countries = st.multiselect(
 
 
 # Submit Button
-if st.button("Generate Requirements", type="primary"):
+left, middle, right = st.columns(3)
+if middle.button("Generate Requirements", type="primary"):
     if (
         not project_description
         or not selected_requirements_types

@@ -39,11 +39,11 @@ with st.expander("Requirement Type Descriptions"):
 
 # Deployment Countries
 selected_countries = st.multiselect(
-    "Select countries where the application will be deployed:", COUNTRIES
+    "Select countries where the application will be deployed:", sorted(COUNTRIES)
 )
 
 # Requirements Language
-selected_language = st.selectbox("Select the requirements language:", LANGUAGES)
+selected_language = st.selectbox("Select the requirements language:", sorted(LANGUAGES))
 
 
 # Submit Button

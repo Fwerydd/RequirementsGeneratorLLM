@@ -30,7 +30,9 @@ selected_requirements_types = st.multiselect(
     sorted(REQUIREMENT_TYPES.keys()),
 )
 # Requirement Type Descriptions
-with st.expander("Requirement Type Descriptions"):
+with st.expander(
+    "Requirement Type Descriptions", icon=":material/keyboard_arrow_down:"
+):
     for req_type, req_desc in sorted(REQUIREMENT_TYPES.items()):
         st.markdown(
             f"<div style='font-size: 0.85em;'><b>{req_type}</b>: {req_desc.description}</div>",

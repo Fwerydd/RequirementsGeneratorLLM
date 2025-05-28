@@ -39,13 +39,14 @@ with st.expander(
             unsafe_allow_html=True,
         )
 
-# Deployment Countries
-selected_countries = st.multiselect(
-    "Select countries where the application will be deployed:", sorted(COUNTRIES)
-)
-
 # Requirements Language
 selected_language = st.selectbox("Select the requirements language:", sorted(LANGUAGES))
+
+# Deployment Countries
+selected_countries = st.multiselect(
+    "Select countries where the application will be deployed (optional):",
+    sorted(COUNTRIES),
+)
 
 
 # Submit Button

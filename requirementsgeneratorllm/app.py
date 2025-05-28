@@ -7,6 +7,12 @@ from requirementsgeneratorllm.prompt_executor import execute_prompts
 from requirementsgeneratorllm.requirements_writer import save_requirements
 from requirementsgeneratorllm.constants import COUNTRIES, LANGUAGES, REQUIREMENT_TYPES
 
+st.set_page_config(
+    page_title="LLM-Powered Requirements Generator",
+    page_icon="📄",
+    layout="centered",
+)
+
 st.title("LLM-Powered Requirements Generator")
 
 st.markdown(

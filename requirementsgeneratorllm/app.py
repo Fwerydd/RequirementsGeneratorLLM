@@ -66,6 +66,11 @@ st.markdown("---")
 disable_button = not (
     project_description and selected_requirements_types and selected_language
 )
+# Disclaimer note
+st.markdown(
+    "<p style='font-size: 0.85em; color: gray;'>* When clicking on 'Generate Requirements', you allow Mistral AI to use your data to improve their models.</p>",
+    unsafe_allow_html=True,
+)
 left, middle, right = st.columns(3)
 if middle.button("Generate Requirements", type="primary", disabled=disable_button):
     with st.spinner("Generating requirements using Mistral LLM..."):
